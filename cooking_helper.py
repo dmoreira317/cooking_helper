@@ -42,7 +42,7 @@ def print_doc(random_dict, ingredient_dict, img):
         # ask where to save
         save_route = save()
         
-        # Printing word document
+        # Creating word document
         recipe_doc = docx.Document()
         recipe_doc.add_paragraph("--------This is your meal of choice--------")
         recipe_doc.add_paragraph(html.unescape(random_dict["meals"][0]["strMeal"]))
